@@ -7,9 +7,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const iconsDir = join(__dirname, "../public/icons");
 
 const svg = `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="108" fill="#0a1628"/>
-  <rect x="56" y="56" width="400" height="400" rx="88" fill="#d4a017"/>
-  <text x="256" y="300" font-family="Arial, Helvetica, sans-serif" font-size="168" font-weight="700" fill="#0a1628" text-anchor="middle">OC</text>
+  <rect width="512" height="512" rx="108" fill="#0a1a2e"/>
+  <circle cx="256" cy="200" r="140" fill="#00F4FE" opacity="0.9"/>
+  <circle cx="256" cy="200" r="120" fill="#226397"/>
+  <text x="256" y="300" font-family="Arial, Helvetica, sans-serif" font-size="168" font-weight="700" fill="#FFEC7C" text-anchor="middle">OC</text>
 </svg>`;
 
 await mkdir(iconsDir, { recursive: true });

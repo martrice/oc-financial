@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="OC">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="OC Financial">
   <defs>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#e8c547" />
-      <stop offset="100%" stop-color="#d4a017" />
+    <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F4FE" />
+      <stop offset="100%" stop-color="#226397" />
     </linearGradient>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="112" fill="#0a1628" />
-  <circle cx="256" cy="204" r="140" fill="url(#gold)" opacity="0.95" />
-  <text x="256" y="300" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="140" font-weight="900" fill="#0a1628">OC</text>
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="#0a1a2e" />
+  <circle cx="256" cy="204" r="140" fill="url(#aqua)" opacity="0.95" />
+  <text x="256" y="300" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="140" font-weight="900" fill="#0a1a2e">OC</text>
 </svg>
-

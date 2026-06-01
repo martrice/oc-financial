@@ -35,7 +35,7 @@ export default function SignupPage() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Jordan Lee"
-            className="w-full rounded-xl border border-navy-600 bg-navy-800/60 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500/40 transition-all"
+            className="input-brand w-full rounded-xl px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none transition-all"
           />
         </div>
 
@@ -50,7 +50,7 @@ export default function SignupPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@university.edu"
-            className="w-full rounded-xl border border-navy-600 bg-navy-800/60 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500/40 transition-all"
+            className="input-brand w-full rounded-xl px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none transition-all"
           />
         </div>
 
@@ -66,7 +66,7 @@ export default function SignupPage() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="At least 8 characters"
-            className="w-full rounded-xl border border-navy-600 bg-navy-800/60 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500/40 transition-all"
+            className="input-brand w-full rounded-xl px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none transition-all"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function SignupPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 py-3.5 text-sm font-semibold text-navy-950 hover:from-gold-400 hover:to-gold-500 disabled:opacity-60 transition-all shadow-lg shadow-gold-500/20"
+          className="btn-primary w-full rounded-xl py-3.5 text-sm"
         >
           {loading ? "Creating account..." : "Create account"}
         </button>
@@ -86,7 +86,7 @@ export default function SignupPage() {
 
       <p className="mt-8 text-center text-sm text-slate-400">
         Already have an account?{" "}
-        <Link href="/login" className="font-medium text-gold-400 hover:text-gold-300">
+        <Link href="/login" className="font-medium text-maize hover:text-aqua">
           Sign in
         </Link>
       </p>

@@ -11,12 +11,11 @@ export default function DashboardPage() {
   });
 
   return (
-    <div className="min-h-screen bg-navy-950">
+    <div className="min-h-screen bg-bg-deep">
       <AppNav />
 
       <main>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* Greeting */}
           <div className="mb-8">
             <p className="text-sm text-slate-400">Good afternoon,</p>
             <h1 className="text-2xl sm:text-3xl font-semibold text-white mt-1">
@@ -25,9 +24,8 @@ export default function DashboardPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Balance & quick actions */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="rounded-2xl border border-navy-700/50 bg-gradient-to-br from-navy-800/80 to-navy-900/80 p-6 sm:p-8 backdrop-blur-sm">
+              <div className="rounded-2xl border border-violet/60 bg-violet/30 p-6 sm:p-8 backdrop-blur-sm">
                 <p className="text-sm font-medium text-slate-400 uppercase tracking-wider">
                   Available Balance
                 </p>
@@ -42,16 +40,16 @@ export default function DashboardPage() {
                   {["Send", "Deposit", "Pay"].map((action) => (
                     <button
                       key={action}
-                      className="rounded-xl bg-navy-700/60 border border-navy-600/50 px-5 py-2.5 text-sm font-medium text-white hover:bg-navy-600/60 hover:border-gold-500/30 transition-colors"
+                      className="rounded-xl border border-violet bg-bg-deep/40 px-5 py-2.5 text-sm font-medium text-white hover:border-aqua/40 hover:shadow-[0_0_12px_rgba(0,244,254,0.25)] transition-all"
                     >
                       {action}
                     </button>
                   ))}
                   <Link
                     href="/chat"
-                    className="rounded-xl bg-gold-500/10 border border-gold-500/30 px-5 py-2.5 text-sm font-medium text-gold-400 hover:bg-gold-500/20 transition-colors"
+                    className="rounded-xl bg-maize/15 border border-maize/40 px-5 py-2.5 text-sm font-medium text-maize hover:bg-maize/25 transition-colors"
                   >
-                    Ask OC
+                    Ask Ollie
                   </Link>
                 </div>
               </div>
@@ -59,16 +57,15 @@ export default function DashboardPage() {
               <TransactionList />
             </div>
 
-            {/* Debit card & OC promo */}
             <div className="space-y-6">
-              <div className="rounded-2xl border border-navy-700/50 bg-navy-900/60 p-6 backdrop-blur-sm">
+              <div className="rounded-2xl border border-violet/60 bg-violet/30 p-6 backdrop-blur-sm">
                 <h2 className="text-lg font-semibold text-white mb-4">Your Card</h2>
                 <DebitCard />
                 <div className="mt-4 flex gap-2">
-                  <button className="flex-1 rounded-lg border border-navy-600 py-2 text-xs font-medium text-slate-400 hover:text-white hover:border-navy-500 transition-colors">
+                  <button className="flex-1 rounded-lg border border-violet py-2 text-xs font-medium text-slate-400 hover:text-white hover:border-aqua/40 transition-colors">
                     Lock card
                   </button>
-                  <button className="flex-1 rounded-lg border border-navy-600 py-2 text-xs font-medium text-slate-400 hover:text-white hover:border-navy-500 transition-colors">
+                  <button className="flex-1 rounded-lg border border-violet py-2 text-xs font-medium text-slate-400 hover:text-white hover:border-aqua/40 transition-colors">
                     View details
                   </button>
                 </div>
@@ -76,15 +73,15 @@ export default function DashboardPage() {
 
               <Link
                 href="/chat"
-                className="block rounded-2xl border border-gold-500/20 bg-gradient-to-br from-gold-500/10 to-transparent p-6 hover:border-gold-500/40 transition-colors group"
+                className="block rounded-2xl border border-aqua/25 bg-gradient-to-br from-primary/40 to-transparent p-6 hover:border-aqua/50 hover:shadow-[0_0_20px_rgba(0,244,254,0.2)] transition-all group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-navy-950 font-bold text-sm">
-                    OC
+                  <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-[9px] shadow-[0_0_16px_rgba(0,244,254,0.4)] ring-1 ring-aqua/50">
+                    Ollie
                   </div>
                   <div>
-                    <p className="font-semibold text-white group-hover:text-gold-400 transition-colors">
-                      Chat with OC
+                    <p className="font-semibold text-white group-hover:text-aqua transition-colors">
+                      Chat with Ollie
                     </p>
                     <p className="text-sm text-slate-400">
                       Get personalized money advice

@@ -17,7 +17,7 @@ export default function Logo({ size = "md", showTagline = false }: LogoProps) {
   return (
     <Link href="/dashboard" className="flex items-center gap-3 group">
       <div
-        className={`${s.icon} flex items-center justify-center rounded-xl bg-gradient-to-br from-gold-500 to-gold-600 font-bold text-navy-950 shadow-lg shadow-gold-500/20 transition-transform group-hover:scale-105`}
+        className={`${s.icon} flex items-center justify-center rounded-xl bg-primary font-bold text-white shadow-lg shadow-aqua/20 transition-transform group-hover:scale-105`}
       >
         OC
       </div>

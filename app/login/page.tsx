@@ -34,7 +34,7 @@ export default function LoginPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@university.edu"
-            className="w-full rounded-xl border border-navy-600 bg-navy-800/60 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500/40 transition-all"
+            className="input-brand w-full rounded-xl px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none transition-all"
           />
         </div>
 
@@ -43,7 +43,7 @@ export default function LoginPage() {
             <label htmlFor="password" className="block text-sm font-medium text-slate-300">
               Password
             </label>
-            <button type="button" className="text-xs font-medium text-gold-400 hover:text-gold-300">
+            <button type="button" className="text-xs font-medium text-aqua hover:text-maize">
               Forgot password?
             </button>
           </div>
@@ -54,14 +54,14 @@ export default function LoginPage() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"
-            className="w-full rounded-xl border border-navy-600 bg-navy-800/60 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-gold-500/40 focus:border-gold-500/40 transition-all"
+            className="input-brand w-full rounded-xl px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none transition-all"
           />
         </div>
 
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 py-3.5 text-sm font-semibold text-navy-950 hover:from-gold-400 hover:to-gold-500 disabled:opacity-60 transition-all shadow-lg shadow-gold-500/20"
+          className="btn-primary w-full rounded-xl py-3.5 text-sm"
         >
           {loading ? "Signing in..." : "Sign in"}
         </button>
@@ -69,7 +69,7 @@ export default function LoginPage() {
 
       <p className="mt-8 text-center text-sm text-slate-400">
         Don&apos;t have an account?{" "}
-        <Link href="/signup" className="font-medium text-gold-400 hover:text-gold-300">
+        <Link href="/signup" className="font-medium text-maize hover:text-aqua">
           Create one free
         </Link>
       </p>

@@ -11,7 +11,8 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   title: "OC Financial — Student Banking",
-  description: "Modern digital banking built for college students, powered by OC AI.",
+  description:
+    "Modern digital banking built for college students, powered by Ollie AI.",
 };
 
 export default function RootLayout({
@@ -23,15 +24,12 @@ export default function RootLayout({
     <html lang="en" className={`${sora.variable} h-full`}>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#d4a017" />
+        <meta name="theme-color" content="#226397" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="#0a1628"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#0a1a2e" />
         <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
       </head>
-      <body className="min-h-full antialiased bg-navy-950 text-foreground">
+      <body className="min-h-full antialiased bg-bg-deep text-foreground">
         <PwaRegistrar />
         {children}
       </body>

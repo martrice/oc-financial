@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { NextResponse } from "next/server";
 
-const OC_SYSTEM_PROMPT = `You are OC, the AI financial companion for OC Financial — a digital banking app built for college students. You are warm, encouraging, and financially savvy. You speak like a smart older sibling, not a bank robot. You help students with credit, budgeting, savings, fraud protection, scholarships, and general financial wellness. Never be condescending. Always explain financial terms simply.`;
+const OLLIE_SYSTEM_PROMPT = `You are Ollie, the AI financial companion for OC Financial — a digital banking app built for college students. You are warm, encouraging, and financially savvy. You speak like a smart older sibling, not a bank robot. You help students with credit, budgeting, savings, fraud protection, scholarships, and general financial wellness. Never be condescending. Always explain financial terms simply.`;
 
 type ChatMessage = {
   role: "user" | "assistant";
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1024,
-      system: OC_SYSTEM_PROMPT,
+      system: OLLIE_SYSTEM_PROMPT,
       messages: messages.map((msg) => ({
         role: msg.role,
         content: msg.content,
@@ -61,7 +61,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Anthropic API error:", error);
     return NextResponse.json(
-      { error: "Failed to get a response from OC. Please try again." },
+      { error: "Failed to get a response from Ollie. Please try again." },
       { status: 502 }
     );
   }

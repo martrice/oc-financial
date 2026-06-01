@@ -6,8 +6,10 @@
     <title>OC Financial Offline</title>
     <style>
       :root {
-        --navy: #0a1628;
-        --gold: #d4a017;
+        --bg-deep: #0a1a2e;
+        --primary: #226397;
+        --aqua: #00f4fe;
+        --maize: #ffec7c;
         --text: #f0f4f8;
         --muted: rgba(240, 244, 248, 0.7);
       }
@@ -17,16 +19,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--navy);
+        background: var(--bg-deep);
         color: var(--text);
         font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         padding: 24px;
       }
       .card {
         width: min(680px, 100%);
-        border: 1px solid rgba(212, 160, 23, 0.25);
+        border: 1px solid rgba(0, 244, 254, 0.25);
         border-radius: 16px;
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(78, 68, 99, 0.25);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
         padding: 28px;
       }
@@ -46,9 +48,9 @@
         gap: 8px;
         padding: 8px 12px;
         border-radius: 999px;
-        border: 1px solid rgba(212, 160, 23, 0.35);
-        background: rgba(212, 160, 23, 0.08);
-        color: rgba(212, 160, 23, 1);
+        border: 1px solid rgba(0, 244, 254, 0.35);
+        background: rgba(34, 99, 151, 0.25);
+        color: var(--aqua);
         margin-top: 18px;
         font-weight: 600;
         font-size: 13px;
@@ -57,8 +59,8 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: var(--gold);
-        box-shadow: 0 0 0 6px rgba(212, 160, 23, 0.15);
+        background: var(--aqua);
+        box-shadow: 0 0 0 6px rgba(0, 244, 254, 0.15);
       }
     </style>
   </head>
@@ -69,8 +71,7 @@
         OC Financial is having trouble connecting right now. If you were here earlier, some assets may still work.
         For the best experience, reconnect to the internet and try again.
       </p>
-      <div class="chip"><span class="dot"></span> OC will be back online soon</div>
+      <div class="chip"><span class="dot"></span> Ollie will be back online soon</div>
     </div>
   </body>
 </html>
-

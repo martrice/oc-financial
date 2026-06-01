@@ -68,10 +68,10 @@ export const MOCK_TRANSACTIONS: Transaction[] = [
   },
 ];
 
-export const OC_GREETING =
-  "Hey Jordan! 👋 I'm OC, your financial companion. Ask me about your spending, budgeting tips, or anything money-related — I've got you.";
+export const OLLIE_GREETING =
+  "Hey Jordan! 👋 I'm Ollie, your financial companion. Ask me about your spending, budgeting tips, or anything money-related — I've got you.";
 
-export function getOCResponse(input: string): string {
+export function getOllieResponse(input: string): string {
   const text = input.toLowerCase();
 
   if (text.includes("balance") || text.includes("how much")) {
@@ -90,7 +90,7 @@ export function getOCResponse(input: string): string {
     return "Hey! Good to see you. How can I help with your finances today? I can check your balance, review spending, or help you plan ahead.";
   }
   if (text.includes("card") || text.includes("debit")) {
-    return `Your OC debit card ending in ${MOCK_USER.cardLast4} is active and ready to use. Tap-to-pay is enabled. Need to lock your card or report something? Just say the word.`;
+    return `Your OC Financial debit card ending in ${MOCK_USER.cardLast4} is active and ready to use. Tap-to-pay is enabled. Need to lock your card or report something? Just say the word.`;
   }
 
   return "I'm here to help with budgeting, spending insights, savings goals, and account questions. Try asking about your balance, recent transactions, or how to save more this semester!";
