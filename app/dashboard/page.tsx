@@ -14,7 +14,7 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-navy-950">
       <AppNav />
 
-      <main className="lg:pl-64 pb-20 lg:pb-0">
+      <main>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* Greeting */}
           <div className="mb-8">

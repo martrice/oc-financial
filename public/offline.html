@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OC Financial Offline</title>
+    <style>
+      :root {
+        --navy: #0a1628;
+        --gold: #d4a017;
+        --text: #f0f4f8;
+        --muted: rgba(240, 244, 248, 0.7);
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--navy);
+        color: var(--text);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        padding: 24px;
+      }
+      .card {
+        width: min(680px, 100%);
+        border: 1px solid rgba(212, 160, 23, 0.25);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        padding: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 12px 0 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 160, 23, 0.35);
+        background: rgba(212, 160, 23, 0.08);
+        color: rgba(212, 160, 23, 1);
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 6px rgba(212, 160, 23, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>You're offline</h1>
+      <p>
+        OC Financial is having trouble connecting right now. If you were here earlier, some assets may still work.
+        For the best experience, reconnect to the internet and try again.
+      </p>
+      <div class="chip"><span class="dot"></span> OC will be back online soon</div>
+    </div>
+  </body>
+</html>
+
